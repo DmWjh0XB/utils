@@ -6,7 +6,8 @@ from random import randint
 
 if __name__ == "__main__":
     """
-        Change the mac address of the interface provided
+        Change the mac address of the interface provided on a linux system
+        sudo python3 random_mac_changer.py
     """
 
     random_mac = ":".join([(str(hex(randint(0, 255)))[2:]).zfill(2) for x in range(6)])
