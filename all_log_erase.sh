@@ -1,9 +1,4 @@
-#! /bin/sh
-find -f /var/log -type f -delete
+#! /bin/bash
+find /var/log -type f -delete
+rm $HISTFILE
 cat /dev/null > $HISTFILE
-
-fc -c
-history -c
-# zsh history
-fc -p 
-history -p
